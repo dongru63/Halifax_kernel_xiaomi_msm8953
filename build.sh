@@ -58,14 +58,14 @@ echo " ";
 echo " ";
 echo " Setting up the compiler ";
 echo " ";
-git clone https://github.com/laityts/arm-linux-gnueabi-8.x ~/Toolchain/arm-linux-gnueabi-8.x
-git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 ~/Toolchain/aarch64-linux-android-4.9
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 ~/Toolchain/64
+git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 ~/Toolchain/32
 echo " ";
 echo " ";
 ##########################################
 export ARCH=arm64
-export CROSS_COMPILE_ARM32=${HOME}/Toolchain/arm-linux-gnueabi-8.x/bin/arm-linux-gnueabi-
-export CROSS_COMPILE=${HOME}/Toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE_ARM32=${HOME}/Toolchain/32/bin/arm-linux-androideabi-
+export CROSS_COMPILE=${HOME}/Toolchain/64/bin/aarch64-linux-android-
 ##########################################
 echo " Creating directories ";
 echo " ";
