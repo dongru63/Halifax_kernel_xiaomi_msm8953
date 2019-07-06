@@ -151,7 +151,7 @@ echo " ";
 echo " ";
 echo " ";
 echo " ";
-make -C $(pwd) O=outputdTiffany-4.9-Custom lineage_tiffany_defconfig
+make -C $(pwd) O=outputdTiffany-4.9-Custom tiffany_defconfig
 make -j$(nproc) -C $(pwd) O=outputdTiffany-4.9-Custom
 ##########################################
 
