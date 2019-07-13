@@ -57,7 +57,7 @@ struct vdso_mappings {
 	unsigned long num_code_pages;
 	struct vm_special_mapping data_mapping;
 	struct vm_special_mapping code_mapping;
-};
+};	
 
 /*
  * The vDSO data page.
