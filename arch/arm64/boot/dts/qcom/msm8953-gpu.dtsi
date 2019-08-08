@@ -252,6 +252,13 @@
 				qcom,bus-min = <0>;
 				qcom,bus-max = <0>;
 			};
+   
+                        // Enable qcom,gpu-pwrlevel@7
+                        qcom,gpu-pwrlevel@8 {
+                                reg = <8>;
+                                qcom,gpu-freq = <19200000>;
+                                qcom,bus-freq = <0>;
+                        };
 		};
 	};
 
